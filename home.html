@@ -8,11 +8,12 @@
 
 	<head>
 		<meta charset="utf-8">
+		
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<title>冯同学的个人主页</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
+				<meta name="description" content="冯同学的个人主页" />
+		<meta name="keywords" content="冯同学的个人主页" />
 		<!-- Facebook and Twitter integration -->
 		<meta property="og:title" content="" />
 		<meta property="og:image" content="" />
@@ -47,7 +48,7 @@
 
 	</head>
 
-	<body>
+	<body  onLoad="body_onload()">
 
 		<div id="fh5co-page">
 			<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
@@ -249,5 +250,17 @@
 		<script src="js/main.js"></script>
 	<audio src="raw/bgm.mp3" controls="controls" loop="loop"></audio>
 	</body>
+
+<script type="text/javascript">
+	function body_onload()
+{
+    if(0 == getcookie('param_cookie')){
+        setcookie("param_cookie",1,10);
+        window.location.reload(true); 
+    }
+}
+
+</script>
+
 
 </html>
