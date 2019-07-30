@@ -102,8 +102,8 @@ figure figcaption {
   position: fixed;
   bottom: 0;
   top: 0;
-  left: 0;
-  overflow-y: scroll;
+  left: -10px;
+  overflow-y: hidden;
   z-index: 1001;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
